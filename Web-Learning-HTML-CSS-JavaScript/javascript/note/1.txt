@@ -1,0 +1,7 @@
+1. falsy values in javascript:
+	false
+	null
+	undefined
+	""
+	0
+	NaN

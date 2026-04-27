@@ -1,0 +1,24 @@
+
+
+.jumbotron{
+	color:#2c3e50;
+	font-family: ubuntu;
+}
+
+h1{
+	font-family: ubuntu;
+	font-weight: bold;
+}
+
+.navbar-inverse{
+	background:#2c3e50;
+	
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color:white;
+}
+
+.navbar-inverse .navbar-brand{
+	color:white;
+}

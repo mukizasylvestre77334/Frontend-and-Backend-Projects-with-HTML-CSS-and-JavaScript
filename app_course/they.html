@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> hello sales!</title>
+  </head>
+  <body>
+    <p> sales platform</p>
+    <button onclick="console.log('quantity:'+quantity_dg);"> quantity show</button>
+    <button onclick="quantity_dg++;
+    console.log(`quantity:${quantity_dg}`);">add to chart</button>
+    <button onclick="quantity_dg+=2;
+    console.log(`quantity:${quantity_dg}`);">2++</button>
+    <button onclick="quantity_dg+=3;
+    console.log(`quantity:${quantity_dg}`);">3++</button>
+    <button onclick="quantity_dg=0;
+    console.log('quantity was reset');console.log(`quantity:${quantity_dg}`)"
+    >reset chart</button>
+    <script>
+      let quantity_dg=0;
+    </script>
+  </body>
+</html>

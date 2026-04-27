@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- remember 12 columns in total, one rows sum up to 12 -->
+<html>
+<head>
+	<title>Grid System</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="text/css">
+		.grid{
+			background: pink;
+			border: 2px black solid;
+		}
+		.blue{
+			background: blue;
+			border: 2px black solid;
+			height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 grid col-sm-6" > COL LG 4</div>
+			<div class="col-lg-3 col-md-3 grid col-sm-6"> COL LG 4</div>
+			<div class="col-lg-3 col-md-3 grid col-sm-6"> COL LG 4</div>
+			<div class="col-lg-3 col-md-3 grid col-sm-6"> COL LG 4</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 grid">COL LG 1</div>
+		</div>
+		<!-- nested grids -->
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="row">
+					<div class="col-lg-3 col-md-3  col-sm-6 blue" > HALF</div>
+					<div class="col-lg-3 col-md-3  col-sm-6 blue"> HALF</div>
+					<div class="col-lg-3 col-md-3  col-sm-6 blue"> HALF</div>
+					<div class="col-lg-3 col-md-3  col-sm-6 blue"> HALF</div>
+				</div>
+			</div>
+			<div class="col-lg-6 grid">
+				HAHA
+			</div>
+		</div>
+	</div>
+</body>
+</html>

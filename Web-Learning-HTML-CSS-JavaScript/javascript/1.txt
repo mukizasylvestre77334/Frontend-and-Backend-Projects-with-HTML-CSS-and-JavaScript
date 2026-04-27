@@ -1,0 +1,11 @@
+1. falsy values in javascript:
+	false
+	null
+	undefined
+	""
+	0
+	NaN
+
+2. for (varName in object){
+	//varName is the member name of the object
+}

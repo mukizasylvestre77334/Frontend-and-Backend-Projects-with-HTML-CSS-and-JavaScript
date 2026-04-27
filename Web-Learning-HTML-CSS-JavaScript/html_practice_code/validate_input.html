@@ -1,0 +1,22 @@
+<!-- Make sure not empty and the syntax must be matched -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Valiate the input</h1>
+	<h1>==================</h1>
+	<h1>==================</h1>
+	<form action="http://google.ca" method="get">
+		<label for="username">Username:</label>
+		<input id = "username" type="text" required> <!-- required, make sure it is not empty --> 
+		<label for = "password"> Password: </label>
+		<input id = "password" type="password" required>
+
+		<label for="email">Email:</label> <!-- type will automatically be checked -->
+		<input id="email" type="email" required="">
+		<button>Login</button>
+	</form>
+</body>
+</html>

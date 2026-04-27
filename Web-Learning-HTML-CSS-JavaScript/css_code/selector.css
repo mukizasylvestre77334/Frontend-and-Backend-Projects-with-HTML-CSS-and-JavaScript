@@ -1,0 +1,17 @@
+/*select particular element*/
+body{
+	background: orange;
+}
+li{
+	border: purple 5px solid;
+}
+/*element selector */
+#special {
+	background: yellow;
+}
+
+/*class selector */
+.oneclass {
+	background: red
+	text-decoration: line-through;*/
+}

@@ -1,0 +1,20 @@
+h1{
+	color:red;
+	border: 5px purple solid; 
+}
+body{
+	/*background: url("https://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg");*/
+	/*background-repeat: no-repeat;*/
+	background:pink; 
+	/*background-image: url("https://ichef-1.bbci.co.uk/news/976/media/images/83351000/jpg/_83351965_explorer273lincolnshirewoldssouthpicturebynicholassilkstone.jpg");*/
+	background-size: cover;
+}
+
+
+div{
+	background: yellow;
+	border: 5px purple dashed;
+}
+p{
+	background: green;
+}

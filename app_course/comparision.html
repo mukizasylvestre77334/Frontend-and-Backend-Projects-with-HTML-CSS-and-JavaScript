@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<!--comparision 1) ==, means comparing two things by firstly converting them in the same type 
+in simple words it is not sensitive to types of things
+2)===, it is sensitive to types of things thats is commonly used in javascript-->
+<head>
+  <title> comparision operator</title>
+</head>
+<body>
+  <p>rock paper scissor</p>
+  <button onclick=" let computerNum;
+  computerNum=computerMove();
+  let luwi='rock';
+  const message =`you picked rock and computer picked ${computerNum}`;
+  playgame(message,luwi);
+  ">rock</button>
+  <button onclick=" const computerNum=computerMove(); 
+  const message =`you picked paper and computer picked ${computerNum}`;
+  playgame(message);
+  ">paper</button>
+  <button onclick=" const computerNum=computerMove();
+  
+  if (computerNum==='rock') {alert(`${message} which you lose`);
+    
+  } if (computerNum==='scissor') {alert(`${message} means the sama choices`);
+    
+  } else {alert(`${message} which means you win`);
+    
+  }">scissor</button>
+  <script>
+  function playgame(messag,tena) {computerNum=computerMove(); luwi=tena;
+    const message =`you picked ${tena} and computer picked ${computerNum}`;
+    if (computerNum==='rock') {alert(`${messag}  which you made the same`);} 
+    else if (computerNum==='scissor') {alert(`${messag} means that you win`);} 
+    else {alert(`${messag} means that you lose`);};
+    console.log(computerNum);
+  }
+    
+      function computerMove() {let computerNum;
+        const randNum = Math.random();
+    if(randNum>=0 && randNum<(1/3)){computerNum='rock';} 
+    if (randNum>=(1/3) && randNum<(2/3)) {
+      computerNum='paper';} else {computerNum='scissor';};
+      return computerNum;
+      };
+      
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> buttons</title>
+  <style>
+    body{
+      background-color: rgb(25, 25,25);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom: 110px;
+  color: white;
+    }
+    .tom1{
+        background-color:white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 50px;
+        font-weight: 700;
+      }
+    .tom2{
+        background-color:white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 50px;
+        font-weight: 700;
+      }
+      .tom3{
+        background-color:white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 50px;
+        font-weight: 700;
+      }
+      .tans{
+        background-color:gray;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 50px;
+        font-weight: 700;
+      }
+    
+  </style>
+</head>
+<body>
+  <p> three buttons must be pressed and change color</p>
+  <button class="tom1" onclick="changeColour(1)">queto1</button>
+  <button class="tom2" onclick="changeColour(2)">queto2</button>
+  <button class="tom3" onclick="changeColour(3)">queto3</button>
+  <script>
+    function changeColour(tan) {
+      const pan=document.querySelector(`.tom${tan}`);
+      const pako=document.querySelectorAll("button");
+      pako.forEach(naso => naso.classList.remove("tans"));
+      if (pan.className===`tom${tan}`) {
+        pan.classList.add("tans");
+      }
+    }
+    
+    
+    
+    
+    
+
+  </script>
+</body>
+
+</html>

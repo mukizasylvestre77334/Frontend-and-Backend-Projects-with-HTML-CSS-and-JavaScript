@@ -1,0 +1,43 @@
+/*Elements*/
+li{
+
+}
+/*Classes*/
+.hell{
+
+}
+
+/*id*/
+#name{
+
+}
+
+
+/*stars: select everything on the page*/
+*{
+	border:1px solid grey;
+}
+
+/*Descendant selectors: select the particular tags inside particular area*/
+li a{
+	color: red;
+}
+
+/*Ajacent selector: select all particular tags come after some*/
+h4 + ul{
+	border: 4px solid red;
+}
+
+ /*Attribte selectos: select particular attrbutes*/
+a[href="http://google.ca"]{
+	background: blue;
+}
+
+input[type="text"]{
+	color:red;
+}
+
+/*nth of types:select every nth of the tags*/
+li:nth-of-type(3){
+	background: purple;
+}

@@ -1,0 +1,16 @@
+h1{
+	color:#000000;
+}
+
+h2{
+	color:#4B0082;
+}
+
+h2{
+	color:rgb(0,0,0);
+}
+
+h2{  
+	/*RGBA: change colors transparence, the fourth paremater ranges from 0 to 1 */;
+	color:rgba(11,9,150,0.2);
+}

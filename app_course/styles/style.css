@@ -1,0 +1,45 @@
+body{
+  background-color: rgb(25, 25,25);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-bottom: 110px;
+  color: white;
+}
+.title{
+  font-size: 30px;
+  font-weight: bold;
+}
+.man{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.emoji{
+  height: 50px;
+}
+.moja{
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 3px solid white;
+  background-color: transparent;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.reset,.monkey{
+  background-color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.manu{
+  margin-bottom: 30px;
+}
+.dano{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.danu{
+  font-size: 15px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> loops and arrays</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .contain,.tones{
+        display: grid;
+        grid-template-columns: 150px 120px 80px; /* Adjust widths as needed */
+        row-gap: 10px;
+        column-gap: 10px;
+        align-items: center;
+      }
+      .input-item,.datos{
+        font-size: 15px;
+        padding: 6px;
+
+      }
+      .input-button,.dele-button{
+        background-color: green;
+        color: white;
+        font-size: 15px;
+        padding: 15px 8px;
+        border: none;
+        cursor: pointer;
+      }
+      .button-display{
+        background-color: red;
+        color: white;
+        font-size: 15px;
+        padding: 15px 8px;
+        border: none;
+        cursor: pointer;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <p> we are going to list</p>
+    <div class="tones">
+      <input placeholder="put-names" class="input-item">
+      <input type="date" class="datos">
+      <button class="input-button" >Add</button>
+      <button class="dele-button" >Delete</button>
+  </div>
+    <div class="contain"></div>
+    <script>
+      
+      //let pamo=0;S
+      const listMin=[];
+      const listMino=document.querySelector(".input-item");
+      const listDatos=document.querySelector(".datos");
+      function addFun() {
+        const names=listMino.value;
+        const dates=listDatos.value;
+
+        listMin.push({name:names,dueDate:dates});
+        console.log(listMin);
+        listMino.value="";
+        listDatos.value="";
+        let pamo="";
+        listMin.forEach((para,index) =>{
+          const pamu=`<div>${para.name}</div> 
+          <div>${para.dueDate}</div>
+          <button onclick="dele(${index})" class="button-display">Delete</button>`;
+          pamo+=pamu;
+        })
+        
+        document.querySelector(".contain").innerHTML=pamo;
+        
+      }
+      function delet() {
+        const minot=listMino.value;
+        const kan=listMin.indexOf(minot);
+        listMin.splice(kan,1);
+        console.log(listMin);
+        let pamo="";
+        
+        listMin.forEach( (para,index)=> {
+          const pamu=`<div>${para.name}</div> 
+          <div>${para.dueDate}</div>
+          <button onclick="dele(${index})" class="button-display">Delete</button>`;
+          pamo+=pamu;
+        })
+        document.querySelector(".contain").innerHTML=pamo;
+      }
+      function dele(index) {
+        listMin.splice(index,1);
+        let pamo="";
+        
+        listMin.forEach( (para,index) =>{
+          const pano=`<div>${para.name}</div> 
+          <div>${para.dueDate}</div>
+          <button sign="${index}" class="button-display">Delete</button>`;
+          pamo+=pano;
+        })
+        document.querySelector(".contain").innerHTML=pamo;
+      }
+      document.querySelector(".input-button").addEventListener("click",
+        ()=>{addFun()}
+      );
+      document.querySelector(".dele-button").addEventListener("click",
+        ()=>{delet()}
+      );
+      document.querySelectorAll(".button-display").forEach(much=>{
+        much.addEventListener("click",()=>{
+          const mucho=much.getAttribute("sign");
+          dele(parseInt(mucho));
+        })
+      });
+      
+
+
+    </script>
+  </body>
+</html>

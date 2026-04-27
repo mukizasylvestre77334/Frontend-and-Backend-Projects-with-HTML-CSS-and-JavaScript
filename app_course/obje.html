@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/style.css">
+    <title >Rock Paper Scissors</title>
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    <button status='rock'
+     class="moja"><img src="scripts/rock-emoji.png" class="emoji"></button>
+
+    <button status='paper'
+     class="moja"><img src="scripts/paper-emoji.png" class="emoji"></button>
+
+    <button 
+      status='scissors';
+    class="moja"><img src="scripts/scissors-emoji.png" class="emoji"></button>
+
+    <p class="man"> </p>
+    <p class="manu"></p>
+    <p class="danu"></p>
+    <p class="dano"></p>
+
+    <button onclick="
+    score.Win=0;
+    score.Lose=0;
+    score.tie=0;
+    localStorage.removeItem('score');
+    alert('the entire scores have been reset!')" class="reset">reset score</button>
+    <button class="monkey" onclick="autoPlay()">Auto-Play</button>
+    
+
+    <script src="scripts/scri.js"></script>
+  </body>
+</html>
